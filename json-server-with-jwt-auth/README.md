@@ -19,10 +19,10 @@ Port configuration and JSON file can be configured via args:
 ### Auth system routes
 
 * **Login**: /login
-* **Sign-in**: /sign-in
+* **sign-up**: /sign-up
 * **Verify user**: /verify (This route only tests the authenticity of a token)
 
-Send to /login and /sign-in routes a POST request with user object in body, like this:
+Send to /login and /sign-up routes a POST request with user object in body, like this:
 
 ```{email: "user@example.com", password: "1234"}```
 

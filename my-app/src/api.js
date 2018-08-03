@@ -30,8 +30,8 @@ export const postLogin = ({ data }) => {
     });
 };
 
-export const postSignIn = ({ data }) => {
-  const path = "/sign-in/";
+export const postSignUp = ({ data }) => {
+  const path = "/sign-up/";
   return fetch(`${getAPIUrl()}${path}`, {
     method: "POST",
     headers: getHeaders(),

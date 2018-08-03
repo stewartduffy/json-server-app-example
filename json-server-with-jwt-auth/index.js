@@ -13,12 +13,12 @@ yargs.options({
   },
   authentication: {
     alias: "a",
-    description: "Enable authenticaded routes",
+    description: "Enable authenticated routes",
     default: "true"
   },
   delay: {
     alias: "d",
-    description: "Miliseconds delay before response",
+    description: "Milliseconds delay before response",
     default: "1500"
   }
 });
@@ -47,9 +47,9 @@ userStorage.logUsers();
 const login = require("./routes/login-route")(userStorage);
 server.post("/login", login);
 
-// Route for sign-in
-const register = require("./routes/sign-in-route")(userStorage);
-server.post("/sign-in", register);
+// Route for sign-up
+const register = require("./routes/sign-up-route")(userStorage);
+server.post("/sign-up", register);
 
 // Auth middleware
 if (yargs.argv.authentication === "true") {
