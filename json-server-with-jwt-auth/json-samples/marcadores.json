@@ -1,0 +1,80 @@
+{
+  "tipos": [
+    {
+      "id": 0,
+      "tipo": "Indefinido"
+    },
+    {
+      "id": 1,
+      "tipo": "Público"
+    },
+    {
+      "id": 2,
+      "tipo": "Privado"
+    },
+    {
+      "id": 3,
+      "tipo": "Oculto"
+    },
+    {
+      "id": 4,
+      "tipo": "Promocionado"
+    }
+  ],
+  "marcadores": [
+    {
+      "titulo": "guiarte.com",
+      "url": "https://guiarte.com/",
+      "id": 1,
+      "descripcion": "Guiarte es un sitio de guías de turismo"
+    },
+    {
+      "titulo": "Google Drive",
+      "url": "https://drive.google.com",
+      "id": 2
+    },
+    {
+      "titulo": "DesarrolloWeb.com",
+      "url": "https://desarrolloweb.com/",
+      "id": 3
+    },
+    {
+      "titulo": "Mozilla Labs",
+      "url": "http://www.mozillalabs.com/",
+      "id": 4
+    },
+    {
+      "titulo": "Windows",
+      "url": "https://www.microsoft.com/es-es/windows/",
+      "id": 5
+    },
+    {
+      "titulo": "Gmail",
+      "url": "http://mail.google.com",
+      "id": 6
+    },
+    {
+      "titulo": "El País",
+      "url": "http://elpais.com",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "url": "https://www.yahoo.com",
+      "titulo": "Yahoo!",
+      "descripcion": "es un portal"
+    },
+    {
+      "url": "https://www.webcomponents.org",
+      "titulo": "WebComponents.org",
+      "descripcion": "la Home de los componentes!!",
+      "id": 9
+    },
+    {
+      "url": "https://www.polymer-project.org",
+      "titulo": "Polymer project",
+      "descripcion": "La home de Polymer y su documentación.",
+      "id": 10
+    }
+  ]
+}
