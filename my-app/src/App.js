@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { fetchSeries, postLogin, postSignIn } from "./api";
+import { fetchSeries, postLogin, postSignIn, verifyToken } from "./api";
 
 import "./App.css";
 
@@ -46,11 +46,10 @@ class App extends Component {
   };
 
   handleVerifyToken = () => {
-    console.log("handleSignIn");
-    const data = { email: "duffy@example.com", password: "1234" };
+    console.log("handleVerifyToken");
 
-    postSignIn({ data }).then(response => {
-      console.log("postSignIn response: ", response);
+    verifyToken({ token: this.state.token }).then(response => {
+      console.log("response: ", response);
     });
   };
 
@@ -69,9 +68,11 @@ class App extends Component {
         <button type="button" onClick={this.handleSignIn}>
           Sign in
         </button>
-        <button type="button" onClick={this.handleVerifyToken}>
-          VerifyToken
-        </button>
+        {this.state.token && (
+          <button type="button" onClick={this.handleVerifyToken}>
+            VerifyToken
+          </button>
+        )}
       </div>
     );
   }
