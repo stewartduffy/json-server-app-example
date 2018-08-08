@@ -5,22 +5,19 @@ import { fetchSeries, postLogin, postSignUp, verifyToken } from "./api";
 import "./App.css";
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      series: [],
-      token: null
-    };
-  }
+  state = {
+    series: [],
+    token: null
+  };
 
   componentDidMount() {
     fetchSeries().then(data => {
       console.log("data: ", data);
-
-      this.setState({
-        series: data
-      });
+      if (data) {
+        this.setState({
+          series: data
+        });
+      }
     });
   }
 
