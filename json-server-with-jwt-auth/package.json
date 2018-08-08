@@ -16,9 +16,7 @@
   "homepage": "https://github.com/typicode/json-server",
   "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.4",
     "delay": "^2.0.0",
-    "express": "^4.16.2",
     "json-server": "^0.12.0",
     "jsonwebtoken": "^8.1.0",
     "yargs": "^10.0.3"
